@@ -113,6 +113,21 @@ main {
   margin: 0 auto;
 }
 
+/* Project Gallery Styles */
+.project-gallery {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-gallery img {
+  height: 250px;
+  object-fit: cover;
+  flex: 1;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer Styles */
 footer {
   background-color: #333;
@@ -281,5 +296,16 @@ footer p {
 
   .tool-card p {
     font-size: 0.8rem;
+  }
+}
+
+/* Responsive for project gallery */
+@media (max-width: 768px) {
+  .project-gallery {
+    flex-direction: column;
+  }
+
+  .project-gallery img {
+    height: 200px;
   }
 }
